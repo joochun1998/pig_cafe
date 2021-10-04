@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="red"
+      color="purple"
       green
     >
       <div>
