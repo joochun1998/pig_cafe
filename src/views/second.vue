@@ -89,6 +89,17 @@
     elevation="2"
     large
   >지방형 돼지</v-btn>
+
+
+   <v-btn
+    elevation="2"
+    large
+    @click="Home"
+  >되돌아가기</v-btn>
+   
+
+
+
       </v-container>
 
       
@@ -130,7 +141,14 @@ export default {
        console.log('체크해보기', num)
     }
 
+    first ()  {
+       this.$router.push('/Home')
+    }
+    
+   
 
+
+    }
 
 
   }, //methods 
