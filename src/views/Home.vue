@@ -5,8 +5,8 @@
       color="red"
       green
     >
-      <div class]
-      <돼지의 정석>
+      <div>
+        돼지의 정석
         <v-img
           alt="pig"
           class="shrink mr-2"
