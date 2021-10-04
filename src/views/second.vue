@@ -6,7 +6,7 @@
       green
     >
       <div>
-        돼지의 정석223
+        두번
         <v-img
           alt="pig"
           class="shrink mr-2"
@@ -46,10 +46,6 @@
 
     <v-main>
       <v-container>
-        <v-row>
-          <!-- <img src="https://www.biomin.net/fileadmin/_processed_/1/4/csm_IMG_Piglets_1010_32_1920x1080px_325914e293.jpg" alt=""> -->
-          <img src="./a-pig.jpg" alt="">
-        </v-row>
         
 
         <v-row>
@@ -92,7 +88,6 @@
   <v-btn
     elevation="2"
     large
-    @click="second"
   >지방형 돼지</v-btn>
       </v-container>
 
@@ -133,11 +128,6 @@ export default {
 
     plus(num) { 
        console.log('체크해보기', num)
-    },
-
-    second() { 
-
-      this.$router.push('/second')
     }
 
 
