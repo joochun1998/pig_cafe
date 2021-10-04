@@ -6,7 +6,7 @@
       green
     >
       <div>
-        돼지의 정석
+        돼지의 정석2
         <v-img
           alt="pig"
           class="shrink mr-2"
