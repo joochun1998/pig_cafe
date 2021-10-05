@@ -6,7 +6,7 @@
       green
     >
       <div>
-        두번
+        세번째
         <v-img
           alt="pig"
           class="shrink mr-2"
