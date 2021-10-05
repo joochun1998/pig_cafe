@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
 import second from '../views/second'
+import Third from '../views/Third'
+
 
 Vue.use(VueRouter)
 
