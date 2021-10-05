@@ -20,8 +20,8 @@ const routes = [
     component: second
   },
   {
-    path: '/third',
-    name: 'third',
+    path: '/Third',
+    name: 'Third',
     component: Third
   },
   {

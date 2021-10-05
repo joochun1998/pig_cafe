@@ -81,7 +81,7 @@
     @click="Home"
   >되돌아가기</v-btn>
    
-
+    
 
 
       </v-container>
@@ -127,10 +127,11 @@ export default {
 
 
 
-    third()  { 
+    Home()  { 
        this.$router.push('/') 
     },
     
+   
    
 
 

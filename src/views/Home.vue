@@ -139,9 +139,11 @@ export default {
     second() { 
 
       this.$router.push('/second')
-    }
+    },
 
-
+    Third() { 
+      this.$router.push('/Third')
+    },
 
 
   }, //methods 
