@@ -74,6 +74,7 @@
       <v-btn
     elevation="2"
     large
+    @click="Third"
   >근육형 돼지</v-btn>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
