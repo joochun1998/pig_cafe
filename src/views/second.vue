@@ -141,8 +141,8 @@ export default {
        console.log('체크해보기', num)
     },
 
-    first ()  {
-       this.$router.push('/Home')
+    Home ()  {
+       this.$router.push('/')
     },
     
    
