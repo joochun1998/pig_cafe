@@ -128,7 +128,7 @@ export default {
 
 
     third()  { 
-       this.$router.push('/Home') 
+       this.$router.push('/') 
     },
     
    
