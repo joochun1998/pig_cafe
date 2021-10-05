@@ -129,14 +129,13 @@ export default {
 
     third()  { 
        this.$router.push('/Home') 
-    }
+    },
     
    
 
 
-    }
 
 
   }, //methods 
-};
+}
 </script>
