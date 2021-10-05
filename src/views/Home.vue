@@ -72,7 +72,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
       <v-btn
-    elevation="2"
+    elevation="3"
     large
     @click="Third"
   >근육형 돼지</v-btn>
