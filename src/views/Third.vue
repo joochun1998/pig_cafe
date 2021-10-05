@@ -28,7 +28,7 @@
 
       <v-spacer>
         <v-banner
-  elevation="8" color = "white" 
+  elevation="7" color = "white" 
 >어떤 돼지가 되고 싶나요</v-banner>
         
         
