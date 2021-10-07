@@ -58,8 +58,39 @@
           </v-col>
         </v-row>
         
+        <v-row>
+          <v-col>
+            <v-text-field
+              label="나이를 입력하세요"
+              v-model="pigage"
+              
+            ></v-text-field>
+          </v-col>
+        </v-row>
+
+      
+       <v-row>
+          <v-col>
+            <v-text-field
+              label="체중을 입력하세요"
+              v-model="pigage"
+              
+            ></v-text-field>
+          </v-col>
+        </v-row>
+
+
+        <v-row>
+          <v-col>
+            <v-text-field
+              label="목표체중을 입력하세요"
+              v-model="pigage"
+              
+            ></v-text-field>
+          </v-col>
+        </v-row>
         
-        
+
         
       <br><br><br><br><br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -67,10 +98,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
-      <v-btn
-    elevation="2"
-    large
-  >근육형 돼지</v-btn>
+      
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -85,10 +113,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-  <v-btn
-    elevation="2"
-    large
-  >지방형 돼지</v-btn>
+  
 
 
    <v-btn
@@ -98,6 +123,12 @@
   >되돌아가기</v-btn>
    
 
+   <v-btn
+    elevation="2"
+    large
+    @click="Home"
+  >저장하기</v-btn>
+   
 
 
       </v-container>
@@ -125,7 +156,7 @@ export default {
   data: () => ({
     pigType: '이름을 입력하세요',
   }),
-
+  
   methods: {
     showChane(change) {
       // console.log('Show me changes ...', change)
@@ -145,7 +176,11 @@ export default {
        this.$router.push('/')
     },
     
-   
+   data: () => ({
+    pigage: '이름을 입력하세요',
+    }),
+
+ 
 
 
 

@@ -58,7 +58,38 @@
           </v-col>
         </v-row>
         
+        <v-row>
+          <v-col>
+            <v-text-field
+              label="나이를 입력하세요"
+              v-model="pigage"
+              
+            ></v-text-field>
+          </v-col>
+        </v-row>
         
+        <v-row>
+          <v-col>
+            <v-text-field
+              label="체중을 입력하세요"
+              v-model="pigage"
+              ></v-text-field>>
+
+        <v-row>
+          <v-col>
+            <v-text-field
+              label="목표체중을 입력하세요"
+              v-model="pigage"
+              
+            ></v-text-field>
+          </v-col>
+        </v-row>
+
+              
+            ></v-text-field>
+          </v-col>
+        </v-row>
+
         
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -74,12 +105,20 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-  
-   <v-btn
+      <v-btn
     elevation="2"
     large
     @click="Home"
-  >되돌아가기</v-btn>
+   >되돌아가기</v-btn>
+   
+    <v-btn
+    elevation="2"
+    large
+    @click="Home"
+  >저장하기</v-btn>
+   
+     
+
    
     
 
@@ -131,6 +170,9 @@ export default {
        this.$router.push('/') 
     },
     
+     data: () => ({
+    pigage: '이름을 입력하세요',
+    }),
    
    
 
