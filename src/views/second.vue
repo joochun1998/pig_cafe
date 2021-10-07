@@ -63,7 +63,7 @@
             <v-text-field
               label="나이를 입력하세요"
               v-model="pigage"
-              
+              @input ="yourage"
             ></v-text-field>
           </v-col>
         </v-row>
@@ -73,8 +73,8 @@
           <v-col>
             <v-text-field
               label="체중을 입력하세요"
-              v-model="pigage"
-              
+              v-model="pigweight"
+              @input="yourweight"
             ></v-text-field>
           </v-col>
         </v-row>
@@ -84,7 +84,8 @@
           <v-col>
             <v-text-field
               label="목표체중을 입력하세요"
-              v-model="pigage"
+              v-model="ultimateweight"
+              @input="finalweight"
               
             ></v-text-field>
           </v-col>
@@ -177,15 +178,42 @@ export default {
     },
     
    data: () => ({
-    pigage: '이름을 입력하세요',
+    pigage: '나이를 입력하세요',
+    }),
+  
+   methods: { 
+    yourage( ) { 
+      console.log('나이입력', num)
+
+    },
+
+    data: () => ({ 
+      pigweight:'무게를 입력하세요'
     }),
 
+  methods : { 
+    yourweight( ) {  
+      console.log('몸무게 확인', num)
+
+    },
+
+   data: () => ({
+      ultimateweight:'목표무게'
+   }),
+
+  methods : { 
+    finalweight() {  
+      console.log('최종무게', num)
+
+    },
+    
+  
+  
+
+   
  
 
 
 
-
-  } //methods 
-}
 </script>
 
