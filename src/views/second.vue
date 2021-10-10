@@ -156,6 +156,9 @@ export default {
 
   data: () => ({
     pigType: '이름을 입력하세요',
+    pigweight:'무게를 입력하세요',
+    ultimateweight:'목표무게',
+    pigage: '나이를 입력하세요',
   }),
   
   methods: {
@@ -176,44 +179,24 @@ export default {
     Home ()  {
        this.$router.push('/')
     },
-    
-   data: () => ({
-    pigage: '나이를 입력하세요',
-    }),
-  
-   methods: { 
-    yourage( ) { 
-      console.log('나이입력', num)
 
-    },
-
-    data: () => ({ 
-      pigweight:'무게를 입력하세요'
-    }),
-
-  methods : { 
     yourweight( ) {  
       console.log('몸무게 확인', num)
 
     },
 
-   data: () => ({
-      ultimateweight:'목표무게'
-   }),
-
-  methods : { 
     finalweight() {  
       console.log('최종무게', num)
 
     },
-    
-  
-  
 
-   
- 
+    yourage( ) { 
+      console.log('나이입력', num)
 
+    },
 
+  }
+
+};
 
 </script>
-

@@ -87,9 +87,7 @@
             ></v-text-field>
           </v-col>
         </v-row>
-
               
-            ></v-text-field>
           </v-col>
         </v-row>
 
@@ -150,6 +148,8 @@ export default {
 
   data: () => ({
     pigType: '이름을 입력하세요',
+    pigweight:'무게를 입력하세요',
+    ultimateweight:'목표무게'
   }),
 
   methods: {
@@ -184,25 +184,21 @@ export default {
 
     },
 
-    data: () => ({ 
-      pigweight:'무게를 입력하세요'
-    }),
-
-  methods : { 
-    yourweight( ) {  
-      console.log('몸무게 확인', num)
-
-    },
-
-   data: () => ({
-      ultimateweight:'목표무게'
-   }),
-
-  methods : { 
     finalweight() {  
       console.log('최종무게', num)
 
     },
+
+    yourweight( ) {  
+      console.log('몸무게 확인', num)
+
+    },
+   }
+  }
+}
+
+
+    
 
 
 
