@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 
 import second from '../views/second'
 import Third from '../views/Third'
+import Typography from '../views/Typography'
+import Breakpoint from '../views/Typography'
 
 
 Vue.use(VueRouter)
@@ -31,7 +33,16 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {path: '/Typography',
+    name: 'Typography',
+    component: Typography
+  },
+  {path: '/Breakpoint',
+    name: 'Breakpoint',
+    component: Breakpoint
   }
+
 ]
 
 const router = new VueRouter({

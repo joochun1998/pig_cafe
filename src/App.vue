@@ -6,26 +6,24 @@
       dark
     >
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+       
+     
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <v-main>
+      
+        
+          <!-- <img src="https://www.biomin.net/fileadmin/_processed_/1/4/csm_IMG_Piglets_1010_32_1920x1080px_325914e293.jpg" alt=""> -->
+          <img src="./rebel.jpg"alt="rebel.inc">
+          
+        <button class ="d-flex align-center">플레이</button>
+        <button class ="d-flex align-center">튜토리얼</button> 
+        <button class ="d-flex align-center">진행도</button>
+
+        
+
       </div>
 
-      <v-spacer></v-spacer>
+     
 
       <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
@@ -49,6 +47,13 @@ export default {
   name: 'App',
 
   data: () => ({
+    items:[
+      {title: 'Typography', icon:'mid-image', to:'/Typography'},
+      {title: 'Breakpoint', icon: 'mid-image', to:'/Breakpoint' }
+
+
+
+    ],
     //
   }),
 };

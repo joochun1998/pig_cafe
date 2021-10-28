@@ -1,12 +1,13 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="purple"
-      green
-    >
+  
+   <v-app-bar
+  color="green"
+></v-app-bar>
+    
+
       <div>
-        돼지의 정석223
+        Rebel.inc
         <v-img
           alt="pig"
           class="shrink mr-2"
@@ -16,30 +17,16 @@
           width="40"
         />
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.iconscout.com/icon/free/png-512/pig-face-sus-wild-animal-food-33928.png"
-          width="100"
-        />
+       
+        
       </div>
 
-      <v-spacer>
-        <v-banner
-  elevation="8" color = "white" 
->어떤 돼지가 되고 싶나요</v-banner>
-        
-        
-       
-        </v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://play.google.com/store/apps/details?id=com.ndemiccreations.rebelinc&hl=en_US&gl=US"
         target="_blank"
         text>
-        <span class="mr-2"> 살찌는 tip</span>
+        <span class="mr-2">click to download</span>
         <v-icon>mdi-antenna</v-icon>
       </v-btn>
     </v-app-bar>
@@ -48,12 +35,16 @@
       <v-container>
         <v-row>
           <!-- <img src="https://www.biomin.net/fileadmin/_processed_/1/4/csm_IMG_Piglets_1010_32_1920x1080px_325914e293.jpg" alt=""> -->
-          <img src="./a-pig.jpg" alt="">
+          <img src="./rebel.jpg"alt="">
+          
+          
+          </v-container> 
+
         </v-row>
         
 
-        <v-row>
-          <v-col>
+       <!-- <v-row>
+         <v-col>
             <v-text-field
               label="Main input"
               v-model="pigType"
@@ -61,44 +52,35 @@
             ></v-text-field>
           </v-col>
         </v-row>
+        -->
         
-        
-        
-        
-      <br><br><br><br><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
+        
+  
       <v-btn
     elevation="3"
     large
     @click="Third"
-  >근육형 돼지</v-btn>
+  >플레이</v-btn>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+  
+  <v-btn>
+    elevation="3"
+    large
+    @click="Breakpoint"
+    >Breakpoint</v-btn>
+  
+  
+  
   <v-btn
     elevation="2"
     large
     @click="second"
-  >지방형 돼지</v-btn>
+  >진행도</v-btn>
       </v-container>
 
-      
-
+   
 
     </v-main>
   </v-app>
@@ -144,8 +126,10 @@ export default {
     Third() { 
       this.$router.push('/Third')
     },
-
-
+    Gobreakpoint() { 
+      this.$router.push('/Breakpoint')
+    }
+    
   }, //methods 
 };
 </script>
