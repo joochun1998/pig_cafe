@@ -3,7 +3,7 @@
       
     <v-card title> 
         $vuetify.breakpoint.name: {{$vuetify.breakpoint.name}}
-    </v-card title> 
+    </v-card > 
      
      <v-card>
          content

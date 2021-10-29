@@ -5,15 +5,11 @@
       color="primary"
       dark
     >
-      <div class="d-flex align-center">
-       
-     
-
-        <v-main>
-      
+      <div class="d-flex align-center">      
         
           <!-- <img src="https://www.biomin.net/fileadmin/_processed_/1/4/csm_IMG_Piglets_1010_32_1920x1080px_325914e293.jpg" alt=""> -->
-          <img src="./rebel.jpg"alt="rebel.inc">
+          <!-- <img src="@/views/rebel.jpg" alt="rebel.inc"> -->
+          <img src="./views/rebel.jpg" alt="rebel.inc">
           
         <button class ="d-flex align-center">플레이</button>
         <button class ="d-flex align-center">튜토리얼</button> 
