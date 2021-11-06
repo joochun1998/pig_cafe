@@ -1,30 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
-import second from '../views/second'
-import Third from '../views/Third'
-import Typography from '../views/Typography'
-import Breakpoint from '../views/Typography'
-
+import First from '../views/First.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/second',
-    name: 'second',
-    component: second
-  },
-  {
-    path: '/Third',
-    name: 'Third',
-    component: Third
+    name: 'First',
+    component: First
   },
   {
     path: '/about',
@@ -34,14 +18,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-  {path: '/Typography',
-    name: 'Typography',
-    component: Typography
-  },
-  {path: '/Breakpoint',
-    name: 'Breakpoint',
-    component: Breakpoint
-  }
+  
 
 ]
 
