@@ -41,7 +41,7 @@
 
    
 
-     <div class = "pa-9" 
+     <div class = "pa-9" >
      
     <v-app-bar
       absolute
@@ -62,7 +62,7 @@
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
 
-      <v-app-bar-title>Title</v-app-bar-title>
+      <v-app-bar-title></v-app-bar-title>
 
       <v-spacer></v-spacer>
 
@@ -84,7 +84,9 @@
      </div> 
 
     <v-main>
+
       <router-view></router-view> 
+
     </v-main>
   </v-app>
 </template>
@@ -94,8 +96,8 @@
     data: () => ({
       
       items: [
-          { title: 'operators', icon: 'mdi-view-dashboard', to:'/' },
-          { title: 'gadget', icon: 'mdi-help-box', to: '/About' },
+          { title: 'operators', icon: 'mdi-pistol', to:'/' },
+          { title: 'gadget', icon: 'mdi-toolbox', to: '/About' },
         ],
         
         drawer: null }),
