@@ -1,6 +1,18 @@
 <template>
 
        <div class = "home"> 
+         <v-text-field
+            v-model = "newtasktitle"
+            @click:append = "addtask"
+            @keyup.enter= "addtask" 
+             class= "pa-3"
+            outlined
+            label="add operators"
+            append-icon="mdi-plus"
+            hide-details
+            clearable
+          ></v-text-field>
+
       <v-card
     class="mx-auto"
     max-width="400"
@@ -56,6 +68,7 @@
     name : 'Home',
     data () {
       return {
+          newtasktitle: '',
           tasks: [ 
               {
                   id: 1, 
@@ -85,6 +98,15 @@
       }
     },
     methods: {
+       
+       addtask( ) {  console.log('addtask')
+                    let newtask = {  
+                                   id : Date.now(),
+                                  title: this.newtasktitle, 
+                                  done: false
+                    }
+                    this.tasks.push(newtask)
+       },
        doneTask(id) { 
           console.log('id:', id)
            let task = this.tasks.filter(task => task.id === id)[0]

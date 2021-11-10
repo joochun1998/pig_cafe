@@ -1,6 +1,18 @@
 <template>
 
        <div class = "home"> 
+         <v-text-field
+            v-model = "newtasktitle"
+            @click:append = "addtask"
+            @keyup.enter= "addtask" 
+             class= "pa-3"
+            outlined
+            label="add gadget"
+            append-icon="mdi-plus"
+            hide-details
+            clearable
+          ></v-text-field>
+
       <v-card
     class="mx-auto"
     max-width="400"
@@ -30,7 +42,17 @@
             <v-list-item-content>
               <v-list-item-title>{{task.title}}</v-list-item-title>
             </v-list-item-content>
+              <v-list-item-action>
+          <v-btn icon
+          
+             @click.stop="deleteTask(task.id)" >
+            <v-icon color="primary">mdi-delete</v-icon>
+          </v-btn>
+        </v-list-item-action>
           </template>
+
+    
+
         </v-list-item>
         <v-divider></v-divider> 
         </div>
@@ -46,6 +68,7 @@
     name : 'Home',
     data () {
       return {
+          newtasktitle: '',
           tasks: [ 
               {
                   id: 1, 
@@ -55,12 +78,12 @@
               
               {
                   id: 2, 
-                  title: "ADS",
+                  title: "black mirror",
                   done: false 
                }, 
              
               {  id: 3, 
-                 title: "magnet",
+                 title: "jammer",
                  done: false 
     
 
@@ -68,18 +91,37 @@
               },
              
              {    id:4, 
-                   title: "torch", 
+                   title: "suryagate", 
                    done : false}
 
            ]
       }
     },
     methods: {
+       
+       addtask( ) {  console.log('addtask')
+                    let newtask = {  
+                                   id : Date.now(),
+                                  title: this.newtasktitle, 
+                                  done: false
+                    }
+                    this.tasks.push(newtask)
+       },
        doneTask(id) { 
           console.log('id:', id)
            let task = this.tasks.filter(task => task.id === id)[0]
            task.done =!task.done
-       }
+       
+       
+       }, 
+        deleteTask(id) {  
+            this.tasks=this.tasks.filter(task => task.id !== id)
+         
+
+
+
+
+        }
 
     }
   }
